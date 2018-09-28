@@ -1,5 +1,7 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import { IProps } from "./interfaces";
+import "./style.css";
 
 class Header extends React.Component<IProps> {
   constructor(props: IProps) {
@@ -13,10 +15,15 @@ class Header extends React.Component<IProps> {
           key={`item-${index}`}
           className={`nav-item ${index === 0 ? "active" : ""}`}
         >
-          <a className="nav-link" href={item.url}>
+          <NavLink
+            exact={true}
+            className="nav-link"
+            to={item.url}
+            activeClassName="selected"
+          >
             {item.name}{" "}
             {index === 0 ? <span className="sr-only">(current)</span> : ""}
-          </a>
+          </NavLink>
         </li>
       );
     });
