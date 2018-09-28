@@ -1,4 +1,4 @@
-const animationEnabled = false;
+const animationEnabled = true;
 const theme = "dark1";
 
 export const charts = [
