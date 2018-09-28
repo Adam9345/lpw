@@ -11,8 +11,8 @@ import Header from "./components/Header";
 class App extends React.Component {
   public render() {
     const items = [
-      { name: "Home", url: "/" },
-      { name: "Link", url: "/link" },
+      { name: "Home", url: "/lpw/" },
+      { name: "Link", url: "/lpw/link" },
       { name: "Menu3", url: "#menu3" }
     ];
 
@@ -22,7 +22,8 @@ class App extends React.Component {
           <Header theme="dark" items={items} title="Wykresy" />
           <Switch>
             <Route exact={true} path="/" component={ChartGroup} />
-            <Route path="/link" component={ChartGroup} />
+            <Route exact={true} path="/lpw/" component={ChartGroup} />
+            <Route path="/lpw/link" component={ChartGroup} />
           </Switch>
         </div>
       </Router>

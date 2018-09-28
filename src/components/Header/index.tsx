@@ -37,9 +37,9 @@ class Header extends React.Component<IProps> {
           this.props.theme
         }`}
       >
-        <a className="navbar-brand" href="#">
+        <NavLink className="navbar-brand" to="/lpw/">
           {this.props.title}
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
