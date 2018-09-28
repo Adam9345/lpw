@@ -1,0 +1,4 @@
+.selected {
+  color: orange !important;
+  border-bottom: 2px solid rgb(160, 236, 160);
+}
