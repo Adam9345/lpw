@@ -19,7 +19,7 @@ export const charts = [
     ],
     theme,
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Column CanvasJS"
     }
   },
   {
@@ -39,7 +39,7 @@ export const charts = [
     ],
     theme,
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Pie CanvasJS"
     }
   },
   {
@@ -59,7 +59,7 @@ export const charts = [
     ],
     theme,
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Pyramid CanvasJS"
     }
   },
   {
@@ -79,7 +79,7 @@ export const charts = [
     ],
     theme,
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Doughnut CanvasJS"
     }
   },
   {
@@ -99,7 +99,7 @@ export const charts = [
     ],
     theme: "light2",
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Line CanvasJS"
     }
   },
   {
@@ -119,7 +119,7 @@ export const charts = [
     ],
     theme,
     title: {
-      text: "My First Chart in CanvasJS"
+      text: "Bar CanvasJS"
     }
   }
 ];
