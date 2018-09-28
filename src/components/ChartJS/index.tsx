@@ -14,6 +14,22 @@ class ChartJS extends React.Component {
           options={options}
         />
         <Pie data={dataPie} width={800} height={300} />
+        <Bar data={dataBar} width={800} height={300} options={options} />
+        <HorizontalBar
+          data={dataBar}
+          width={800}
+          height={300}
+          options={options}
+        />
+        <Pie data={dataPie} width={800} height={300} />
+        <Bar data={dataBar} width={800} height={300} options={options} />
+        <HorizontalBar
+          data={dataBar}
+          width={800}
+          height={300}
+          options={options}
+        />
+        <Pie data={dataPie} width={800} height={300} />
       </div>
     );
   }
