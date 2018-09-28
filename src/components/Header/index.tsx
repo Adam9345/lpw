@@ -11,10 +11,7 @@ class Header extends React.Component<IProps> {
     const items = this.props.items;
     const tempItems = items.map((item, index) => {
       return (
-        <li
-          key={`item-${index}`}
-          className={`nav-item ${index === 0 ? "active" : ""}`}
-        >
+        <li key={`item-${index}`} className={`nav-item`}>
           <NavLink
             exact={true}
             className="nav-link"
@@ -33,27 +30,29 @@ class Header extends React.Component<IProps> {
   public render() {
     return (
       <nav
-        className={`navbar navbar-expand-lg navbar-${this.props.theme} bg-${
+        className={`navbar sticky-top navbar-expand-lg navbar-${
           this.props.theme
-        }`}
+        } bg-${this.props.theme}`}
       >
-        <NavLink className="navbar-brand" to="/lpw/">
-          {this.props.title}
-        </NavLink>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
+        <div className="container">
+          <NavLink className="navbar-brand" to="/lpw/">
+            {this.props.title}
+          </NavLink>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">{this.renderItems()}</ul>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">{this.renderItems()}</ul>
+          </div>
         </div>
       </nav>
     );
