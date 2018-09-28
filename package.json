@@ -2,6 +2,7 @@
   "name": "lpw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://adam9345.github.io/lpw",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
